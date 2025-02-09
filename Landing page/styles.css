@@ -1,0 +1,258 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  h1, h2, h3, h4 {
+    color: #00ffcc;
+  }
+  
+  a {
+    color: #00ffcc;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #ff00cc;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #00ffcc;
+    color: #1a1a1a;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn:hover {
+    background: #ff00cc;
+    color: #fff;
+    transform: translateY(-5px);
+  }
+  
+  /* Header */
+  header {
+    background: #111;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  header h1 span {
+    color: #ff00cc;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header nav ul li a {
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff00cc;
+  }
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: center;
+    padding: 100px 0;
+    background: linear-gradient(to right, #1a1a1a, #111);
+  }
+  
+  .hero-text {
+    flex: 1;
+  }
+  
+  .hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-image {
+    flex: 1;
+    text-align: right;
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  .hero-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    width: 600px;
+    height: auto;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+  }
+  
+  /* Features Section */
+  .features {
+    padding: 100px 0;
+    background: #111;
+  }
+  
+  .features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .feature-item {
+    text-align: center;
+    padding: 20px;
+    background: #1a1a1a;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+  }
+  
+  .feature-item i {
+    font-size: 40px;
+    color: #00ffcc;
+    margin-bottom: 20px;
+  }
+  
+  /* Testimonials Section */
+  .testimonials {
+    padding: 100px 0;
+    background: #1a1a1a;
+  }
+  
+  .testimonials h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .testimonial-item {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
+  }
+  
+  .testimonial-item img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 150px;
+    height: 150px;
+  }
+  
+  /* Leaderboard Section */
+  .leaderboard {
+    padding: 100px 0;
+    background: #111;
+  }
+  
+  .leaderboard h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th, table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #00ffcc;
+  }
+  
+  /* Footer */
+  footer {
+    padding: 20px 0;
+    background: #111;
+    text-align: center;
+  }
+  
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  footer .social-icons a:hover {
+    color: #ff00cc;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
